@@ -1,0 +1,79 @@
+<!-- html/contact.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Jay's Dessert-Viles</title>
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/contact.css">
+  <link rel="stylesheet" href="/my-style/image-style.css">
+</head>
+<body>
+  <header class="site-header container glass">
+    <a class="brand" href="index.html">Jay's Dessert-Viles</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h1>Contact & Bookings</h1>
+      <p class="muted">We're excited to plan your event — fill the form or request a tasting.</p>
+
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-panel glass" novalidate>
+          <label>
+            <span class="label">Name</span>
+            <input name="name" required>
+          </label>
+          <label>
+            <span class="label">Email</span>
+            <input type="email" name="email" required>
+          </label>
+          <label>
+            <span class="label">Event date</span>
+            <input type="date" name="date">
+          </label>
+          <label>
+            <span class="label">Message</span>
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <div style="display:flex;gap:10px">
+            <button class="btn primary" type="submit">Send message</button>
+            <a class="btn ghost" href="mailto:jay@example.com">Email directly</a>
+          </div>
+        </form>
+
+        <aside>
+          <div class="map glass" aria-hidden="true">
+            <!-- placeholder image for map -->
+            <img  loading="lazy" src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba?w=1600&q=80" alt="map" style="width:100%;height:100%;object-fit:cover;">
+          </div>
+
+          <div class="faq" style="margin-top:18px">
+            <div class="q glass">How do tastings work?</div>
+            <div class="a" style="max-height:0;overflow:hidden;padding:0 12px;">We offer a tasting session for a small fee that is credited to your final invoice.</div>
+
+            <div class="q glass">Do you travel?</div>
+            <div class="a" style="max-height:0;overflow:hidden;padding:0 12px;">Yes — we travel to venues within 120 miles; outside rates apply.</div>
+
+            <div class="q glass">Do you accommodate allergies?</div>
+            <div class="a" style="max-height:0;overflow:hidden;padding:0 12px;">We can create allergy-aware menus — please notify us when booking.</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container" style="margin-top:40px;display:flex;justify-content:space-between">
+    <div>© <span id="year"></span> Jay's Dessert-Viles</div>
+  </footer>
+
+  <script src="../scripts/global.js"></script>
+  <script src="../scripts/contact.js"></script>
+</body>
+</html>

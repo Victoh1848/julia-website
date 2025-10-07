@@ -1,0 +1,154 @@
+<!-- html/index.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jay's Dessert-Viles — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/index.css">
+  <link rel="stylesheet" href="/my-style/image-style.css">
+</head>
+<body>
+  <header class="site-header container glass" role="banner">
+    <a class="brand" href="index.html">Jay's Dessert-Viles</a>
+    <nav class="nav" role="navigation" aria-label="Main">
+      <a href="products.html" class="active">Products</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <button class="theme-toggle btn" aria-pressed="false">🌓</button>
+      <button class="nav-toggle btn" aria-expanded="false" aria-controls="mobile-nav">☰</button>
+    </div>
+  </header>
+
+  <div id="mobile-nav" hidden class="glass" style="margin:16px;padding:12px;">
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main class="container" role="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <p class="kicker">Premium Catering</p>
+        <h1>Jay's <span class="accent">Dessert-Viles</span> — exquisite flavors, impeccable service</h1>
+        <p class="hero-lead">We cater weddings, corporate events, and private parties — stunning dessert tables, plated desserts, live stations, and bespoke menus crafted to your vision.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="services.html">Book an Event</a>
+          <a class="btn ghost" href="contact.html">Request Quote</a>
+        </div>
+
+        <ul class="hero-stats" style="display:flex;gap:12px;margin-top:18px;padding:0;list-style:none">
+          <li class="glass" style="padding:10px 14px;border-radius:12px;"><strong>10+</strong><br><span class="muted">Years</span></li>
+          <li class="glass" style="padding:10px 14px;border-radius:12px;"><strong>500+</strong><br><span class="muted">Events</span></li>
+          <li class="glass" style="padding:10px 14px;border-radius:12px;"><strong>5*</strong><br><span class="muted">Average rating</span></li>
+        </ul>
+      </div>
+
+      <aside class="hero-card glass" data-parallax>
+        <div class="card-inner">
+          <img src="https://images.unsplash.com/photo-1549122728-f519709caa9c?w=1200&q=80" alt="Dessert table">
+          <div style="text-align:center">
+            <h3 style="margin:6px 0 0">Signature Dessert Table</h3>
+            <p class="muted" style="margin:6px 0 0">Custom styling and seasonal flavors</p>
+            <div style="margin-top:12px"><a class="btn" href="services.html">View packages</a></div>
+          </div>
+        </div>
+        <div class="card-glow" aria-hidden="true" style="position:absolute;inset:-20%;filter:blur(40px);background:radial-gradient(500px 200px at 20% 10%, rgba(102,226,255,0.12), transparent)"></div>
+      </aside>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee">
+      <div class="track" style="display:flex;gap:12px;white-space:nowrap;">
+        <div class="item glass">Awarded Best Desserts 2024</div>
+        <div class="item glass">Featured in Gourmet Weddings</div>
+        <div class="item glass">Corporate trusted vendor</div>
+        <div class="item glass">Custom menus & tastings</div>
+        <div class="item glass">Delivery & setup included</div>
+      </div>
+    </div>
+
+    <!-- FEATURED DISHES -->
+    <section class="featured">
+      <h2 class="section-title">Featured creations</h2>
+      <p class="section-sub muted">Handmade desserts for every occasion — a sample from our seasonal menu.</p>
+
+      <div class="featured-grid">
+        <article class="dish-card glass">
+          <img src="/assets/images/cakeimagejulia.jpg" alt="Dessert 1". loading="lazy">
+          <div class="meta">
+            <h3 style="margin:0">Luxe Chocolate Dome</h3>
+            <p class="muted" style="margin:6px 0 0">Decadent mousse, gold leaf finish.</p>
+          </div>
+        </article>
+
+        <article class="dish-card glass">
+          <img src="/assets/images/catering-service1.jpg" alt="Dessert 2" loading="lazy">
+          <div class="meta">
+            <h3 style="margin:0">Citrus Meringue Tart</h3>
+            <p class="muted" style="margin:6px 0 0">Bright, zesty, and balanced.</p>
+          </div>
+        </article>
+
+        <article class="dish-card glass">
+          <img src="/assets/images/catering-service1.webp"alt="Dessert 3" loading="lazy">
+          <div class="meta">
+            <h3 style="margin:0">Opera Slice</h3>
+            <p class="muted" style="margin:6px 0 0">Classic layered French pastry.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <h2 class="section-title">What clients say</h2>
+      <div class="track" style="display:flex;gap:18px;margin-top:12px">
+        <div class="test-card glass">
+          <p>"Jay handled our wedding desserts — guests raved. Professional & creative."</p>
+          <p class="muted">— Mariam K.</p>
+        </div>
+        <div class="test-card glass">
+          <p>"On time, beautiful presentation, exceptional taste."</p>
+          <p class="muted">— Corporate Events Ltd.</p>
+        </div>
+        <div class="test-card glass">
+          <p>"Our holiday party desserts were the talk of the night."</p>
+          <p class="muted">— Anton R.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA STRIP -->
+    <section class="cta-strip glass" style="margin-top:36px">
+      <div class="cta-left">
+        <h3 style="margin:0">Ready to plan an unforgettable dessert experience?</h3>
+        <p class="muted">Book a tasting or request a custom quote — Jay's will handle everything.</p>
+      </div>
+      <div>
+        <a class="btn primary" href="contact.html">Request Quote</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container" style="margin-top:40px;display:flex;justify-content:space-between;align-items:center">
+    <div>© <span id="year"></span> Jay's Dessert-Viles</div>
+    <div style="display:flex;gap:12px">
+      <a class="muted" href="#">Instagram</a>
+      <a class="muted" href="#">Facebook</a>
+      <a class="muted" href="#">Tastings</a>
+    </div>
+  </footer>
+
+  <script src="../scripts/global.js"></script>
+  <script src="../scripts/index.js"></script>
+</body>
+</html>

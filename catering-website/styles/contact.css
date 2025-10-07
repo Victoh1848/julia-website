@@ -1,0 +1,11 @@
+/* styles/contact.css */
+.contact-grid{ display:grid; grid-template-columns: 1fr 360px; gap:20px; align-items:start; margin-top:18px; }
+.contact-panel{ padding:18px; border-radius:14px }
+.contact-panel label{ display:block; margin-bottom:12px; color:var(--muted); font-weight:700 }
+.contact-panel input, .contact-panel textarea{ width:100%; padding:10px 12px; border-radius:10px; border:1px solid rgba(255,255,255,0.04); background: rgba(0,0,0,0.12); color:var(--text) }
+.map{ height:320px; border-radius:12px; overflow:hidden; background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); }
+.faq{ margin-top:18px; }
+.faq .q{ padding:12px; border-radius:10px; margin-bottom:8px; background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent); cursor:pointer; }
+@media (max-width:980px){
+  .contact-grid{ grid-template-columns:1fr; }
+}

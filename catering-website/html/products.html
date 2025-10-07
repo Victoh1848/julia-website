@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Products — Jay's Dessert-Viles</title>
+
+  <!-- global styles (keep) + page styles -->
+  <link rel="stylesheet" href="../styles/global.css">
+  <link rel="stylesheet" href="../styles/products.css">
+  <link rel="stylesheet" href="/my-style/image-style.css">
+</head>
+<body>
+  <!-- Header (matches other pages) -->
+  <header class="site-header container glass" role="banner">
+    <a class="brand" href="index.html">Jay's Dessert-Viles</a>
+    <nav class="nav" role="navigation" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="products.html" aria-current="page">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex;gap:10px;align-items:center">
+      <button class="theme-toggle btn" aria-pressed="false">🌓</button>
+      <button class="nav-toggle btn" aria-expanded="false" aria-controls="mobile-nav">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile nav fallback -->
+  <div id="mobile-nav" hidden class="glass container" style="margin:16px;padding:12px;">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <main class="container" role="main" id="products-page">
+    <!-- Page hero -->
+    <section class="prod-hero glass">
+      <div class="hero-inner">
+        <div>
+          <p class="kicker">Our Menu</p>
+          <h1>Explore Jay's Signature Desserts & Catering Packages</h1>
+          <p class="muted">Browse our curated selection — click any item for details, or use the filters to narrow your search.</p>
+        </div>
+
+        <div class="hero-actions">
+          <input id="search" type="search" placeholder="Search products (e.g. 'macaron')" aria-label="Search products">
+          <select id="filter-category" aria-label="Filter by category">
+            <option value="">All categories</option>
+            <option value="cakes">Cakes</option>
+            <option value="pastries">Pastries</option>
+            <option value="boxes">Boxes & Packs</option>
+            <option value="drinks">Drinks</option>
+            <option value="packages">Event Packages</option>
+          </select>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products grid -->
+    <section class="products">
+      <div id="product-grid" class="product-grid" aria-live="polite">
+        <!-- 30 product cards (each has descriptive alt text) -->
+        <article class="product-card glass" tabindex="0" data-id="1" data-title="Luxe Chocolate Dome" data-price="$20" data-desc="Velvety chocolate mousse dome, mirror glaze, gold leaf">
+           <img src="/assets/images/IMG_2.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy"> <h3>Luxe Chocolate Dome</h3>
+          <p class="price">$20</p>
+          <button class="btn" data-action="open" aria-label="Open Luxe Chocolate Dome details">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="2" data-title="Vanilla Cupcake" data-price="$5" data-desc="Classic vanilla cupcake with vanilla buttercream and sprinkles">
+           <img src="/assets/images/IMG_8.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">  <h3>Vanilla Cupcake</h3>
+          <p class="price">$5</p>
+          <button class="btn" data-action="open" aria-label="Open Vanilla Cupcake details">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="3" data-title="New York Cheesecake Slice" data-price="$7" data-desc="Creamy New York style cheesecake with graham cracker crust and berry coulis">
+         <img src="/assets/images/IMG_9.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">    <h3>Cheesecake Slice</h3>
+          <p class="price">$7</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="4" data-title="Strawberry Tart" data-price="$6" data-desc="Buttery tart shell filled with vanilla custard and fresh strawberries">
+         <img src="/assets/images/IMG_4.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">    <h3>Strawberry Tart</h3>
+          <p class="price">$6</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="5" data-title="Lemon Meringue Pie" data-price="$8" data-desc="Tangy lemon curd topped with torched Italian meringue">
+         <img src="/assets/images/IMG_9.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">  <h3>Lemon Meringue Pie</h3>
+          <p class="price">$8</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="6" data-title="Seasonal Fruit Platter" data-price="$12" data-desc="Assorted seasonal fruits, artfully arranged for sharing (serves 6-8)">
+          <img src="/assets/images/IMG_10.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">    <h3>Fruit Platter</h3>
+          <p class="price">$12</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="7" data-title="Carrot Cake" data-price="$18" data-desc="Spiced carrot cake layered with cream cheese frosting and toasted walnuts">
+         <img src="/assets/images/IMG_4.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Carrot Cake</h3>
+          <p class="price">$18</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="8" data-title="Red Velvet Cake" data-price="$22" data-desc="Moist red velvet layers with silky cream cheese frosting and decorative berries">
+          <img src="/assets/images/IMG_2.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">  <h3>Red Velvet Cake</h3>
+          <p class="price">$22</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="9" data-title="Chocolate Muffin" data-price="$4" data-desc="Moist chocolate muffin with chocolate chips and sugar crust">
+          <img src="/assets/images/IMG_9.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">  <h3>Chocolate Muffin</h3>
+          <p class="price">$4</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="10" data-title="Ice Cream Sundae" data-price="$9" data-desc="Vanilla & chocolate scoops, hot fudge, nuts, and cherry on top">
+          <img src="/assets/images/IMG_6.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">  <h3>Ice Cream Sundae</h3>
+          <p class="price">$9</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="11" data-title="Pecan Pie" data-price="$10" data-desc="Buttery pecan pie with caramelized pecans and flaky crust">
+         <img src="/assets/images/IMG_4.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">  <h3>Pecan Pie</h3>
+          <p class="price">$10</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="12" data-title="Classic Wedding Cake (per tier)" data-price="$150" data-desc="Custom decorated wedding cake per tier — consult for design & flavors">
+         <img src="/assets/images/IMG_1.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Wedding Cake (per tier)</h3>
+          <p class="price">$150+</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="13" data-title="Birthday Cake - Custom" data-price="$45" data-desc="Custom birthday cake — flavors, color scheme, and toppers personalized">
+        <img src="/assets/images/IMG_10.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">    <h3>Birthday Cake</h3>
+          <p class="price">$45</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="14" data-title="Assorted Croissants (dozen)" data-price="$15" data-desc="Buttery croissants — plain, chocolate and almond variety (dozen)">
+         <img src="/assets/images/IMG_9.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Croissants (dozen)</h3>
+          <p class="price">$15</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="15" data-title="Gourmet Doughnuts Box" data-price="$10" data-desc="Box of 6 gourmet doughnuts with seasonal glazes and toppings">
+         <img src="/assets/images/IMG_3.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Doughnuts Box</h3>
+          <p class="price">$10</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="16" data-title="Cookies Pack (12)" data-price="$8" data-desc="Assorted cookies pack — chocolate chip, oatmeal, and shortbread">
+         <img src="/assets/images/IMG_4.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">    <h3>Cookies Pack (12)</h3>
+          <p class="price">$8</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="17" data-title="Catering Tray - Savory & Sweet" data-price="$80" data-desc="Large catering tray with mixed savory bites and mini desserts (serves 10) ">
+          <img src="/assets/images/IMG_10.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Catering Tray</h3>
+          <p class="price">$80</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="18" data-title="Macarons Box (20)" data-price="$25" data-desc="Assorted delicate macarons box with multiple flavors and pastel colors">
+           <img src="/assets/images/IMG_6.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">  <h3>Macarons Box (20)</h3>
+          <p class="price">$25</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="19" data-title="Fruit Cake (slice)" data-price="$30" data-desc="Traditional fruit cake slice with candied fruit and brandy glaze">
+         <img src="/assets/images/IMG_7.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Fruit Cake (slice)</h3>
+          <p class="price">$30</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="20" data-title="Chocolate Fountain Rental" data-price="$60" data-desc="Chocolate fountain setup with skewers and dippers (serves up to 40)">
+          <img src="/assets/images/IMG_1.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Chocolate Fountain</h3>
+          <p class="price">$60</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="21" data-title="Coffee Service (per pot)" data-price="$20" data-desc="Fresh brewed coffee service, includes cups, sugar, and milk (per pot)">
+          <img src="/assets/images/IMG_4.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Coffee Service</h3>
+          <p class="price">$20</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="22" data-title="Tea Set & Service" data-price="$18" data-desc="Assorted loose leaf teas served with accompaniments and pots">
+          <img src="/assets/images/IMG_7.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Tea Set</h3>
+          <p class="price">$18</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="23" data-title="Milkshake — Signature" data-price="$6" data-desc="Signature milkshake with whipped cream and bespoke toppings">
+          <img src="/assets/images/IMG_8.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">  <h3>Milkshake</h3>
+          <p class="price">$6</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="24" data-title="Pastry Sampler" data-price="$28" data-desc="Sampler tray of mini pastries including eclairs, tarts and danishes">
+          <img src="/assets/images/IMG_1.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">
+          <h3>Pastry Sampler</h3>
+          <p class="price">$28</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="25" data-title="Baklava Box (12)" data-price="$15" data-desc="Box of traditional baklava pieces with pistachios and honey syrup">
+            <img src="/assets/images/IMG_2.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">
+          <h3>Baklava Box (12)</h3>
+          <p class="price">$15</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="26" data-title="Churros Cone" data-price="$12" data-desc="Warm churros dusted with cinnamon sugar served with chocolate dip">
+             <img src="/assets/images/IMG_3.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Churros Cone</h3>
+          <p class="price">$12</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="27" data-title="Brownies Tray" data-price="$14" data-desc="Decadent fudgy brownies cut into bite-size pieces (tray of 24)">
+           <img src="/assets/images/IMG_4.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy"><h3>Brownies Tray</h3>
+          <p class="price">$14</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="28" data-title="Pancake Stack" data-price="$16" data-desc="Buttermilk pancake stack with seasonal compote and maple butter">
+             <img src="/assets/images/IMG_5.png" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">  <h3>Pancake Stack</h3>
+          <p class="price">$16</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="29" data-title="Belgian Waffles" data-price="$12" data-desc="Crisp Belgian waffles served with whipped cream and fresh fruit">
+          <img src="/assets/images/IMG_6.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">  <h3>Belgian Waffles</h3>
+          <p class="price">$12</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+
+        <article class="product-card glass" tabindex="0" data-id="30" data-title="Ice Cream Cake" data-price="$40" data-desc="Layered ice cream cake with cookie crunch and fudge swirl">
+          <img src="/assets/images/IMG_7.jpg" alt="Sampler tray of mini pastries including eclairs and tarts" loading="lazy">   <h3>Ice Cream Cake</h3>
+          <p class="price">$40</p>
+          <button class="btn" data-action="open">View</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Product modal (hidden by default) -->
+  <div id="product-modal" class="modal" aria-hidden="true">
+    <div class="modal-panel glass" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close btn" aria-label="Close product details">✕</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc" class="muted"></p>
+      <img id="modal-img" src="" alt="" style="width:100%;border-radius:12px;margin-top:12px">
+      <p id="modal-price" style="margin-top:12px;font-weight:800"></p>
+      <div style="margin-top:12px"><a id="modal-order" class="btn primary" href="#">Order / Enquire</a></div>
+    </div>
+  </div>
+
+  <footer class="site-footer container" style="margin-top:40px;display:flex;justify-content:space-between">
+    <div>© <span id="year"></span> Jay's Dessert-Viles</div>
+    <div style="display:flex;gap:12px">
+      <a class="muted" href="#">Instagram</a>
+      <a class="muted" href="#">Facebook</a>
+    </div>
+  </footer>
+
+  <script src="../scripts/global.js"></script>
+  <script src="../scripts/products.js"></script>
+</body>
+</html>
